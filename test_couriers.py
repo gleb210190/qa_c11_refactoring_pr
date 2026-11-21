@@ -5,8 +5,8 @@
 import pytest
 import os
 import requests
-from helpers import get_courier_by_id, create_courier, delete_courier
 from api_client import CourierAPIClient
+
 
 @pytest.fixture
 def new_courier_data():
@@ -16,6 +16,7 @@ def new_courier_data():
         "last_name": "Сидорова",
         "phone": "+79997654321"
     }
+
 @pytest.fixture
 def client():
     base_url = os.getenv("API_BASE_URL")

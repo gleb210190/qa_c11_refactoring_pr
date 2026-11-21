@@ -11,9 +11,6 @@
 """
 import requests
 
-
-
-
 class CourierAPIClient:
     def __init__(self, base_url: str, auth_token: str):
         self.base_url = base_url
@@ -46,3 +43,4 @@ class CourierAPIClient:
         response.raise_for_status()
         return response.json()
     
+
